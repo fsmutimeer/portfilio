@@ -1,10 +1,10 @@
-import Link from 'next/link'
+import Layout from '../components/Layout';
 
 const about = ()=>{
-    return <>
+    return <Layout>
     About Me
-    <Link href='/'>Go to Home</Link>
-    </>
+  
+    </Layout>
 }
 
 export default about;

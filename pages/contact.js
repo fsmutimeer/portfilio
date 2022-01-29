@@ -1,10 +1,10 @@
-import Link from "next/link";
+import Layout from "../components/Layout";
 
 const contact = () => {
-    return <>
-    About Me
-    <Link href='/'>Go to Home</Link>
-    </>
+    return <Layout>
+   Contact Us
+   
+    </Layout>
 };
 
 export default contact;
