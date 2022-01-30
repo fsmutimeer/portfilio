@@ -1,9 +1,9 @@
-import Navivation from './Nav';
-import Footer from './footer'
+import Footer from './Footer/footer'
+import Header from './Header/Header';
 
 const Layout = ({children})=>{
     return (<>
-    <Navivation/>
+    <Header/>
     <main>{children}</main>
     <Footer/>
     </>)
