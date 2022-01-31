@@ -3,21 +3,22 @@ import { useState, useEffect } from "react";
 import Logo from "./Logo";
 import Search from "./Search";
 import MenuItems from "./MenuItems";
+
 const Navbar = styled.nav ` 
-position:sticky;
-top:0;
-background:transparent;
-height:74px;
-display:flex;
-
-justify-content:center;
-align-items:center;
-font-size:1.2rem;
-z-index:100;
-
-&.active{
+	position:sticky;
+	top:0;
+	background:transparent;
+	height:74px;
+	display:flex;
 	background:black;
-	transition:all .3s ease-out
+	justify-content:center;
+	align-items:center;
+	font-size:1.2rem;
+	z-index:100;
+
+	&.active{
+		background:black;
+		transition:all .3s ease-out
 
 }
 

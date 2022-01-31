@@ -7,7 +7,7 @@ import  Container  from '../components/Container'
 
 export default function Home(props) {
   return (
-    <Layout >
+    < >
     <div >
     <Header title="Home" description="Home page/landing page"/>
 
@@ -126,7 +126,7 @@ export default function Home(props) {
 	 tenetur delectus? Provident nobis id cumque a voluptas qui maxime!</p>
       </Container>
     </div>
-    </Layout>
+    </>
   )
   
 }

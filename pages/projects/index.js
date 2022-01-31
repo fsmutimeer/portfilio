@@ -1,10 +1,9 @@
-import Layout from '../../components/Layout'
 import Header from '../../components/Head/Head';
 const index = () => {
-  return <Layout>
+  return <>
 	  		    <Header title="About" description="about page"/>
 
-	  Projects</Layout>;
+	  Projects</>;
 };
 
 export default index;
