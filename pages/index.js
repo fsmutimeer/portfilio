@@ -3,12 +3,7 @@ import styled from 'styled-components'
 import Header from '../components/Head/Head'
 import Layout from '../components/Layout'
 
-const Container =styled.main`
-	 max-width: 1366px;
-	 margin:0 auto;
-	
-
-`
+import  Container  from '../components/Container'
 
 export default function Home(props) {
   return (
