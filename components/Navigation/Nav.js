@@ -10,7 +10,6 @@ const Navbar = styled.nav `
 	background:transparent;
 	height:74px;
 	display:flex;
-	background:black;
 	justify-content:center;
 	align-items:center;
 	font-size:1.2rem;
