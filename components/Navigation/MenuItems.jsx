@@ -10,7 +10,7 @@ display:flex;
 const HeaderItem = styled.a` 
 display: flex;
 color:#c8cacd;
-padding:0.8rem;
+padding:0.8em;
 /* font-weight:bold; */
 /* cursor: pointer; */
 text-transform: capitalize;

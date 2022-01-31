@@ -27,7 +27,7 @@ display:flex;
 justify-content:center;
 align-items:center;
 height: 74px;
-max-width:1500px;
+/* max-width:1500px; */
 `
 const Nav = () => {
 	const [click, setClick] = useState(false);
