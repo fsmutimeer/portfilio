@@ -8,11 +8,20 @@ cursor: pointer;
 justify-content: center;
 align-items: center;
 margin-left:1.5em;
+.logo{
+	border-radius:50%;
+}
+.logo:hover {
+	transition:all .5s ease-out;
+
+    transform: scale(1.05);
+
+  }
  
 `
 const LogoText = styled.h3`
 display: flex;
-color:white;
+color:#8a939b;
 flex: 1;
 align-items: center;
 justify-content: center;
@@ -24,10 +33,11 @@ margin-right: 1em;
 const Logo = () => {
   return  <Link href='/' passHref>
   <LogoWrapper>
-  <Image src="/logo.jpg" alt="fsmutimeer" width={40} height={40} />
+  <Image className="logo" src="/logo.jpg" alt="fsmutimeer" width={40} height={40} />
   <LogoText>RocketMan</LogoText>
   </LogoWrapper>
 </Link>
+
 };
 
 export default Logo;

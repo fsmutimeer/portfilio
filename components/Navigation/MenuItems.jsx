@@ -1,19 +1,17 @@
 import Link from 'next/link';
 import styled from 'styled-components';
-
+import ROUTES from '../../constants/routes';
 const Menu = styled.ul`
 display:flex;
 
 `
-const List = styled.li` 
-display: flex;
-`
+
 
 const HeaderItem = styled.a` 
 display: flex;
 color:#c8cacd;
 padding:0.8rem;
-font-weight:bold;
+/* font-weight:bold; */
 /* cursor: pointer; */
 text-transform: capitalize;
 
@@ -22,28 +20,35 @@ text-transform: capitalize;
 const MenuItems = () => {
   return <Menu>
 
-<List> <Link href='/' passHref>
+ <Link href={ROUTES.home} passHref>
     <HeaderItem>
         home
     </HeaderItem>
-    </Link></List>
+ </Link>
+	
+ <Link href={ROUTES.blog} passHref>
+    <HeaderItem>
+        blog
+    </HeaderItem>
+ </Link>
+	
    
-    <Link href='/projects' passHref>
+    <Link href={ROUTES.projects} passHref>
     <HeaderItem>
         projects
     </HeaderItem>
     </Link>
-    <Link href='/services' passHref>
+    <Link href={ROUTES.services} passHref>
     <HeaderItem>
         services
     </HeaderItem>
     </Link>
-    <Link href='/contact' passHref>
+    <Link href={ROUTES.contact} passHref>
     <HeaderItem>
         contact
     </HeaderItem>
     </Link>
-    <Link href='/about' passHref>
+    <Link href={ROUTES.about} passHref>
     <HeaderItem>
         about us
     </HeaderItem>

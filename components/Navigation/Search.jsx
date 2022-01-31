@@ -3,13 +3,19 @@ import {AiOutlineSearch, } from 'react-icons/ai'
 
 const SearchBar = styled.div`
 display: flex;
-background: #363840;
+/* background: #363840; */
 /* width: 100%; */
 /* flex:1; */
+background:transparent;
+
 height: 2.3em;
 padding:0.4rem;
 align-items: center;
 border-radius: 3rem;
+&.active{
+	background:#363840;
+	transition:all .5s ease-out
+}
 `
 const SearchIcon = styled.div`
     display: flex;
@@ -28,8 +34,8 @@ outline: none;
 color: #e6e8eb;
 font-size: 1rem;
 `
-const Search = () => {
-  return  <SearchBar>
+const Search = ({navbar}) => {
+  return  <SearchBar className={navbar ? 'active': null}>
   <SearchIcon>
     <AiOutlineSearch />
   </SearchIcon>
